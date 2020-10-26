@@ -1,0 +1,343 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+:root {
+  --colorMain: #000000;
+  --colorText: #ffffff;
+  --colorSecondary: #ffffff;
+  --spacerSmall: 1.2rem; /* 12px */
+  --spacerRegular: 1.6rem; /* 16px */
+  --spacerBig: 3rem; /* 30px */
+  --fontSmall: 1.4rem; /* 12px */
+  --fontRegular: 1.8rem; /* 18px */
+  --fontMedium: 2.4rem; /* 24px */
+  --fontBig: 2.8rem; /* 28px */
+  --fontHuge: 3.6rem; /* 36px */
+  --font: "sofia-pro", Helvetica, Arial, sans-serif;
+  --fontWeightRegular: 400;
+  --fontWeightBold: 700;
+  --fontWeightBlack: 900;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--colorMain);
+  color: var(--colorText);
+}
+
+.header {
+  background-color: var(--colorMain);
+}
+
+.header__wrapper {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: inline;
+  width: calc(100% - 2rem);
+}
+
+.menu__items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu__link {
+  color: var(--colorSecondary);
+  text-decoration: none;
+  display: block;
+  /* font-weight: var(--fontWeightBold); */
+  font-size: var(--fontRegular);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 0.3rem solid transparent;
+  transition: border-bottom 0.4s;
+}
+
+.menu__link--active {
+  font-weight: var(--fontWeightBold);
+}
+
+.menu__link:hover {
+  border-bottom: 0.3rem solid white;
+}
+
+.header__title {
+  font-family: var(--font);
+  font-size: var(--fontMedium);
+  color: white;
+}
+
+.container {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.content {
+  background-color: var(--colorMain);
+}
+
+.content__part {
+  margin-top: var(--spacerRegular);
+  padding: 0 var(--spacerSmall);
+}
+
+/* ME */
+
+.about__title {
+  font-size: var(--fontHuge);
+  font-weight: var(--fontWeightBlack);
+}
+
+.about__text {
+  font-size: var(--fontRegular);
+  font-weight: var(--fontWeightRegular);
+  line-height: 140%;
+}
+
+.about__text__link {
+  font-weight: var(--fontWeightBold);
+  color: var(--colorText);
+  padding-top: var(--spacerSmall); /* create bigger touch area */
+  padding-bottom: var(--spacerSmall); /* create bigger touch area */
+}
+
+.about__skills__text {
+  font-size: var(--fontRegular);
+  padding-top: var(--spacerRegular);
+}
+
+.about__skills_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about__skills__list__item__text {
+  font-size: var(--fontSmall);
+  line-height: 140%;
+}
+
+/* WORK */
+.work {
+  padding-top: var(--spacerBig);
+  padding-bottom: var(--spacerBig);
+}
+.work__title {
+  font-size: var(--fontHuge);
+  font-weight: var(--fontWeightBlack);
+}
+
+.work__linkwrap {
+  text-decoration: none;
+  display: block;
+  color: var(--colorText);
+  transition: 0.2s background-color;
+}
+
+.work__linkwrap:hover {
+  border-radius: 1rem;
+  background-color: #222222;
+}
+
+.work__item {
+  display: flex;
+  flex-flow: column-reverse;
+  padding: var(--spacerRegular) 0;
+}
+
+.work__item__text {
+  font-size: var(--fontRegular);
+}
+
+.work__item__category {
+  font-weight: var(--fontWeightBold);
+  margin-bottom: 0.6rem;
+  margin-top: var(--spacerSmall);
+}
+
+.work__item__title {
+  font-weight: var(--fontWeightRegular);
+  font-size: var(--fontRegular);
+  margin: 0.5rem 0;
+}
+
+.work__item__tools {
+  margin: 0.8rem 0;
+  font-size: var(--fontSmall);
+}
+
+/* BTW */
+.btw {
+  padding-bottom: var(--spacerBig);
+}
+
+.btw__title {
+  font-size: var(--fontHuge);
+  font-weight: var(--fontWeightBlack);
+  margin: var(--spacerBig) 0 var(--spacerSmall) 0;
+}
+
+.btw__text {
+  font-size: var(--fontRegular);
+  line-height: 140%;
+}
+
+.btw__link {
+  padding: var(--spacerSmall) 0;
+  color: var(--colorText);
+  font-weight: var(--fontWeightBold);
+  padding: var(--spacerSmall) 0;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--colorSecondary);
+  color: var(--colorMain);
+  padding: var(--spacerSmall);
+  text-align: center;
+}
+
+.footer__logotext {
+  font-size: var(--fontMedium);
+  display: inline-block;
+  padding: var(--spacerRegular);
+  font-weight: var(--fontWeightBold);
+}
+
+.footer__mail {
+  font-size: var(--fontRegular);
+  font-weight: var(--fontWeightBold);
+  color: var(--colorMain);
+  padding: var(--spacerRegular) 0;
+  word-wrap: break-word;
+}
+
+.footer__links {
+  display: flex;
+  flex-flow: column;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__icons img {
+  margin: var(--spacerBig) 0;
+}
+
+@media only screen and (min-width: 920px) {
+  :root {
+    --fontHuge: 9.6rem; /* 36px */
+  }
+
+  .header__wrapper {
+    flex-flow: row;
+  }
+
+  .header__title {
+    width: 100%;
+  }
+
+  /* about  desktop*/
+  .about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .about__title {
+    margin: 0;
+  }
+
+  .about__skills__list__item__text {
+    font-size: var(--fontRegular);
+  }
+
+  .about__textContainer {
+    max-width: 55rem;
+    padding: var(--spacerRegular);
+    margin-top: var(--spacerBig);
+  }
+
+  /* Work desktop*/
+  .work__title {
+    text-align: center;
+    margin: var(--spacerBig);
+  }
+
+  .work__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work__linkwrap {
+    max-width: 50%;
+    margin-bottom: var(--spacerBig);
+    margin-top: var(--spacerSmall);
+  }
+
+  .work__item {
+    padding: 0 var(--spacerBig);
+  }
+
+  /* BTW desktop */
+  .btw {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: var(--spacerBig);
+  }
+
+  .btw__textContainer {
+    max-width: 40rem;
+    padding: var(--spacerRegular);
+    margin-top: var(--spacerBig);
+  }
+
+  /* footer desktop */
+  .footer {
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .footer__logotext {
+    font-size: var(--fontBig);
+    align-self: center;
+  }
+
+  .footer__icons img {
+    transform: scale(0.8);
+  }
+
+  .footer__mail {
+    font-size: var(--fontMedium);
+  }
+}
