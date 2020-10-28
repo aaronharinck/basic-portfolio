@@ -13,6 +13,7 @@ html {
   --colorMain: #000000;
   --colorText: #ffffff;
   --colorSecondary: #ffffff;
+  --colorGrey: #999999;
   --spacerSmall: 1.2rem; /* 12px */
   --spacerRegular: 1.6rem; /* 16px */
   --spacerBig: 3rem; /* 30px */
@@ -55,6 +56,10 @@ body {
 
 .header__title__link {
   text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .menu {
@@ -159,13 +164,13 @@ body {
   text-decoration: none;
   display: block;
   color: var(--colorText);
-  transition: 0.2s background-color;
+  /* transition: 0.2s background-color; */
 }
 
-.work__linkwrap:hover {
+/* .work__linkwrap:hover {
   border-radius: 1rem;
   background-color: #222222;
-}
+} */
 
 .work__item {
   display: flex;
@@ -292,6 +297,32 @@ body {
 
 .workdetail__item__tools {
   font-size: var(--fontSmall);
+}
+
+.workdetail__video {
+  width: 100%;
+  height: auto;
+}
+
+.workdetail__intro__aside {
+  font-size: var(--fontSmall);
+  margin: 0 0 var(--spacerSmall) 0;
+  line-height: 140%;
+  color: var(--colorGrey);
+}
+
+.workdetail__intro__text__date {
+  padding-top: var(--spacerRegular);
+  padding-bottom: var(--spacerSmall);
+  font-size: var(--fontSmall);
+  font-weight: var(--fontWeightBold);
+  text-transform: uppercase;
+}
+
+.workdetail__intro__text--bold {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontMedium);
+  padding-top: var(--spacerRegular);
 }
 
 .workdetail__intro__text__p {
