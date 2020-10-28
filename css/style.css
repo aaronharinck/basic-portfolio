@@ -358,7 +358,7 @@ body {
 .workdetail__pictures__text {
   font-size: var(--fontHuge);
   font-weight: var(--fontWeightBold);
-  margin: var(--spacerBig) 0 var(--spacerSmall) 0;
+  margin: var(--spacerBig) 0 var(--spacerRegular) 0;
 }
 
 .workdetail__pictures {
