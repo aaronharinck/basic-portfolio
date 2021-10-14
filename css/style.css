@@ -370,6 +370,15 @@ body {
   margin-bottom: var(--spacerSmall);
 }
 
+/* alert banner */
+.alert-banner {
+  font-size: var(--fontRegular);
+  text-align: center;
+  background: rgb(218, 28, 53);
+  padding: var(--spacerSmall);
+  margin-bottom: calc(var(--spacerRegular) * -1);
+}
+
 @media only screen and (min-width: 920px) {
   :root {
     --fontHuge: 9.6rem; /* 36px */
