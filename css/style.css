@@ -467,8 +467,8 @@ body {
     transition: transform 0.2s;
   }
 
-  .backbutton__link {
-  }
+  /* .backbutton__link {
+  } */
 
   .backbutton__link:hover svg {
     transform: translateX(-1rem);
@@ -509,8 +509,8 @@ body {
     margin-left: var(--spacerBig);
   }
 
-  .workdetail__intro__button svg {
-  }
+  /* .workdetail__intro__button svg {
+  } */
 
   .workdetail__pictures {
     display: flex;
