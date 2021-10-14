@@ -240,13 +240,13 @@ body {
   font-weight: var(--fontWeightBold);
 }
 
-.footer__mail {
+/* .footer__mail {
   font-size: var(--fontRegular);
   font-weight: var(--fontWeightBold);
   color: var(--colorMain);
   padding: var(--spacerRegular) 0;
   word-wrap: break-word;
-}
+} */
 
 .footer__links {
   display: flex;
@@ -459,9 +459,9 @@ body {
     transform: scale(0.8);
   }
 
-  .footer__mail {
+  /* .footer__mail {
     font-size: var(--fontMedium);
-  }
+  } */
 
   .backbutton__link svg {
     transition: transform 0.2s;
